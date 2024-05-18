@@ -1,0 +1,16 @@
+TP3 – Resolución.
+-HILOS.
+-Lo que se puede notar con respecto al tiempo de ejecución, es que cumple con el tiempo esperado, lo que si la tarea 1 varia su tiempo según sea la rapidez de la maquina y la tarea 1 y 2 no es exacto el tiempo, ya que la tarea 2 termina en 0.9… segundo, la tarea 3 en 4.0004… segundos, pero cumple. No es predecible el tiempo de ejecución, mas en la tarea 1, ya que depende mucho de la velocidad real de la máquina, la carga del CPU al momento de ejecución, etc.
+-Un ejemplo de un proceso máxima velocidad posible y que dependa de la velocidad de la maquina que lo ejecuta sería el registro de datos en un disco duro o SSD, ya que cuando se almacena datos en un disco duro o SSD depende en gran medida de la velocidad de rotación del disco, ya que cuanto más rápido gire el disco o más rápido la tecnología más rápido de registraran los datos.
+-Un ejemplo de un proceso de velocidad de respuesta no dependiente de la velocidad de procesamiento puede ser cuando reaccionamos ante estímulos inesperados, ya que el cerebro debe reaccionar rápidamente ante estímulos inesperados o situaciones d emergencia. Otro ejemplo son los reflejos, que son respuestas automáticas del sistema nervioso ante estímulos específicos.
+-Lo que se puede notar con el tiempo de ejecución es que los 3 procesos se inician al mismo tiempo, y si se mejoro el tiempo de respuesta ya que el programa sin hilo tarda 5seg, mientras que el programa con hilo tarda 4seg, es decir es más rápido el tiempo de ejecución del programa con hilo.
+-Las funciones completan en el orden establecido, obviamente la tarea 1 va a depender de la velocidad de la máquina, pero las demás tareas cumplen con el tiempo estimado.
+-Cuando cargamos una página web en un navegador, ya que el navegador debe descargar y procesar varios recursos y el multi-hilado permite que el navegador realice múltiples tareas en forma simultánea.
+-CONDICION DE CARRERA (race condition).
+-Lo que se puede notar con respecto al tiempo de ejecución, es que se ejecuta medianamente al instante.
+-El valor final acumulador va variando por cada ejecución del código.
+-Sucede esto debido a que lo dos procesos que se ejecutan (sumador y restador) utilizan un recurso compartido y esto genera no se ejecuten en el orden programado.
+-Se puede solucionar este problema implementando que hasta que no finalice el proceso de sumador no va a iniciarse el proceso de restador, básicamente una exclusión mutua.
+-DETECCION Y CORRECCION DEL PROBLEMA.
+-Lo que sucede con el valor final acumulador es que siempre nos da valor 0 al finalizar el código.
+-Lo que se puede notar con respecto al tiempo de ejecución es que se ejecuta el proceso sumador, bloquea al proceso restador, y cuando finalice el proceso sumador le permite ejecutar el proceso restador.
